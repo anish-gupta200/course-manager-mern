@@ -1,20 +1,124 @@
-# React + Vite
+# 🎓 Course Manager (MERN Stack)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Course Management application built using the MERN stack.
+This app allows users to manage courses with full CRUD operations and search functionality, along with a clean and responsive UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* ➕ Add new courses
+* 📚 View all courses
+* ✏️ Edit course details
+* ❌ Delete courses
+* 🔍 Search courses by name, instructor, category, or level
+* 🖼️ Display course thumbnail (via image URL)
+* 📱 Responsive design using Bootstrap
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔹 Frontend
+
+* **React.js** → Component-based UI development
+* **Axios** → API communication between frontend & backend
+* **React Router DOM** → Client-side routing
+* **Bootstrap** → Responsive UI and styling
+
+### 🔹 Backend
+
+* **Node.js** → Runtime environment for server-side JavaScript
+* **Express.js** → Web framework for building REST APIs
+* **MongoDB** → NoSQL database for storing course data
+* **Mongoose** → ODM for MongoDB (schema & queries)
+* **CORS** → Enable cross-origin requests
+* **Express Session** → Session handling (for future auth support)
+* **BcryptJS** → Password hashing (for future authentication)
+
+---
+
+## 📁 Project Structure
+
+```id="f2l7p9"
+Course_Manager/
+ ├── Frontend/
+ │    ├── src/
+ │    │    ├── components/
+ │    │    ├── App.jsx
+ │
+ ├── Backend/
+ │    ├── controllers/
+ │    ├── models/
+ │    ├── routes/
+ │    ├── app.js
+ │    ├── db.js
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone Repository
+
+```id="8tf7lb"
+git clone https://github.com/YOUR_USERNAME/course-manager-mern.git
+cd course-manager-mern
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+#### Backend
+
+```id="iqrw3v"
+cd Backend
+npm install
+```
+
+#### Frontend
+
+```id="o5n0cd"
+cd Frontend
+npm install
+```
+
+---
+
+### 3️⃣ Run Project
+
+#### Start Backend
+
+```id="o7f6k3"
+nodemon app.js
+```
+
+#### Start Frontend
+
+```id="8nq8u9"
+npm run dev
+```
+
+---
+
+## 🌐 API Endpoints
+
+| Method | Endpoint    | Description       |
+| ------ | ----------- | ----------------- |
+| GET    | /course     | Get all courses   |
+| POST   | /course     | Add a new course  |
+| GET    | /course/:id | Get single course |
+| PUT    | /course/:id | Update course     |
+| DELETE | /course/:id | Delete course     |
+
+---
 
 ## 📸 Screenshot
 
-![Course Manager Screenshot](./Screenshot_2026-04-09_151714.png)
+<p align="center">
+  <img src="./screenshotnew.png" width="800"/>
+</p>
+
+---
+
